@@ -1,2 +1,2 @@
 # Current_Weather
-Call current weather data for one location by city name
+Call current weather data for one location by city name.
