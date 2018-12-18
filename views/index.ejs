@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" type="text" placeholder="Enter a City" required>
+          <input type="submit" value="Get Weather">
+        </form>
+        
+        <% if(error == null){ %>
+          <p><%= weather %></p>
+        <% } %>
+        
+        <% if(weather == null){ %>
+          <p><%= error %></p>
+        <% } %>
+
+      </fieldset>
+    </div>
+  </body>
+</html>
